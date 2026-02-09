@@ -1,0 +1,1 @@
+# Official implementation for the paper "TimeRadar: A Domain-Rotatable Foundation Model for Time Series Anomaly Detection"

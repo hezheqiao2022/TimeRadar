@@ -1,0 +1,20 @@
+ip: 127.0.0.1, port: 29512, hosts: 2, rank: 1, local_rank: 1, gpus: 2
+init_process_group finished
+ip: 127.0.0.1, port: 29512, hosts: 2, rank: 0, local_rank: 0, gpus: 2
+init_process_group finished
+Args in experiment:
+>>>>>>>start pretraining : anomaly_detection_timeradar_TimeRadar_Monash_ADD_sl100_prl100_pal5_st1_dm256_hd64_dp10_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+loading Monash_ADD(train) percentage: 100.0% ...
+Total number of windows in merged dataset:  5649985
+done!
+loading Monash_ADD(val) percentage: 100.0% ...
+Total number of windows in merged dataset:  727278
+done!
+loading Monash_ADD(test) percentage: 100.0% ...
+Total number of windows in merged dataset:  695645
+done!
+Model parameters:  1636043
+	iters: 0, epoch: 1 | loss: 0.6239299 | cost_time: 5 | memory: allocated 18784MB, reserved 20748MB, cached 20748MB 
+Updating learning rate to 0.0
+	iters: 100, epoch: 1 | loss: 0.6039317 | cost_time: 41 | memory: allocated 18804MB, reserved 22764MB, cached 22764MB 
+	iters: 200, epoch: 1 | loss: 0.8704073 | cost_time: 42 | memory: allocated 18804MB, reserved 22764MB, cached 22764MB 
