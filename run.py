@@ -33,20 +33,16 @@ if __name__ == '__main__':
     parser.add_argument('--patch_len', type=int, default=5, help='patch length')
     parser.add_argument('--stride', type=int, default=1, help='stride')
     parser.add_argument('--step', type=int, default=1, help='step')
-    # parser.add_argument('--c_in', type=int, default=1, help='input size')
 
     # model define
     parser.add_argument('--d_model', type=int, default=256, help='dimension of model')
     parser.add_argument('--hidden_dim', type=int, default=64, help='embedding dimenison')
     parser.add_argument('--depth', type=int, default=10, help='number of layers')
-    # parser.add_argument('--bn_dims', type=int, nargs="+", default=[16, 32, 64, 128, 192, 256], help='for DADA')
-    # parser.add_argument('--k', type=int, default=3, help='for DADA')
     parser.add_argument("--mask_mode", type=str, default='c', help="mask strategy")
     parser.add_argument('--copies', type=int, default=10, help='number of replicated samples')
     parser.add_argument('--norm', type=int, default=0, help='True 1 False 0')
     parser.add_argument('--L', type=float, default=1, help='weight in anoamly score')
     parser.add_argument('--channel_independence', type=int, default=1, help='0: channel dependence 1: channel independence')
-    # parser.add_argument('--buffer_size', type=int, default=0.1, help='10 percent of training samples')
 
     # evaluation
     parser.add_argument('--metric', type=str, nargs="+", default="affiliation", help="metric")
